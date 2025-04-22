@@ -1,15 +1,3 @@
-@layer utilities {
-    .visually-hidden {
-        clip: rect(0, 0, 0, 0);
-        clip-path: inset(50%);
-        height: 1px;
-        overflow: hidden;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-    }
-}
-
 @layer reset {
     *,
     *::before,
@@ -189,5 +177,23 @@
         a:focus-visible {
             color: var(--text-brand-light);
         }
+    }
+}
+
+@layer layout {
+    .wrapper {
+        max-width: 1130px;
+        margin-inline: auto;
+    }
+}
+@layer utilities {
+    .visually-hidden {
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
     }
 }
