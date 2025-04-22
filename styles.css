@@ -182,16 +182,22 @@
 
 @layer layout {
     .wrapper {
-        max-width: 1130px;
+        --wrapper-max-width: 1130px;
+
+        max-width: var(--wrapper-max-width);
         margin-inline: auto;
         padding-inline: 1rem;
 
         &[data-width="wide"] {
-            max-width: 1330px;
+            --wrapper-max-width: 1330px;
+
+            max-width: var(--wrapper-max-width);
         }
 
         &[data-width="narrow"] {
-            max-width: 720px;
+            --wrapper-max-width: 720px;
+
+            max-width: var(--wrapper-max-width);
         }
     }
 }
